@@ -33,47 +33,47 @@ Utility classes for C++. Updated as needed.
 
 <br>
 
-#### `std::string ToStringWithPrecision(const T& number, const int decimalPlaces)`
+#### `std::string ToStringWithPrecision(const T& number, const int decimalPlaces) noexcept`
 ##### Returns a string of the passed in number formated with decimal spaces
 
 <br>
 
-#### `bool Contains(std::string input, std::string substring)`
+#### `bool Contains(std::string input, std::string substring) noexcept`
 ##### Retruns true if the substring is contained in the input strung, false otherwise
 
 <br>
 
-#### `bool StartsWith(std::string input, std::string substring)`
+#### `bool StartsWith(std::string input, std::string substring) noexcept`
 ##### Returns true if the input string starts with the substring, false otherwise
 
 <br>
 
-#### `bool EndsWith(std::string input, std::string substring)`
+#### `bool EndsWith(std::string input, std::string substring) noexcept`
 ##### Returns true if the input string ends with the substring, false otherwise
 
 <br>
 
-#### `bool IsLower(char c)`
+#### `bool IsLower(char c) noexcept`
 ##### Returns true if the character is lowercase, false otherwise
 
 <br>
 
-#### `bool IsUpper(char c)`
+#### `bool IsUpper(char c) noexcept`
 ##### Returns true if the character is uppercase, false otherwise
 
 <br>
 
-#### `bool IsChar(char c)`
+#### `bool IsChar(char c) noexcept`
 ##### Returns true if the character is an ASCII character, false otherwise
 
 <br>
 
-#### `std::string ToUpper(const std::string &toConvert)`
+#### `std::string ToUpper(const std::string &toConvert) noexcept`
 ##### Returns a new string with the input string converted to uppercase
 
 <br>
 
-#### `std::string ToLower(const std::string &toConvert)`
+#### `std::string ToLower(const std::string &toConvert) noexcept`
 ##### Returns a new string with the input string converted to lowercase
 
 <br>

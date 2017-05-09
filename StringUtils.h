@@ -90,7 +90,7 @@ namespace StringUtils
 
 	/* Returns a string of the passed in number formated with decimal spaces */
 	template <typename T>
-	std::string ToStringWithPrecision(const T& number, const int decimalPlaces)
+	std::string ToStringWithPrecision(const T& number, const int decimalPlaces) noexcept
 	{
 		std::ostringstream toOutput;
 		toOutput << std::fixed << std::setprecision(decimalPlaces) << number;
@@ -98,46 +98,46 @@ namespace StringUtils
 	}
 
 	/* Checks if the substring is contained anywhere in the strung */
-	bool Contains(std::string input, std::string substring)
+	bool Contains(std::string input, std::string substring) noexcept
 	{
 		if (substring.size() > input.size()) return false;
 		return input.find(substring) != std::string::npos;
 	}
 
 	/* Check if the a string starts with a certain substring */
-	bool StartsWith(std::string input, std::string substring)
+	bool StartsWith(std::string input, std::string substring) noexcept
 	{
 		if (substring.size() > input.size()) return false;
 		return std::equal(substring.begin(), substring.end(), input.begin());
 	}
 
 	/* Check if the a string ends with a certain substring */
-	bool EndsWith(std::string input, std::string substring)
+	bool EndsWith(std::string input, std::string substring) noexcept
 	{
 		if (substring.size() > input.size()) return false;
 		return std::equal(substring.rbegin(), substring.rend(), input.rbegin());
 	}
 
 	/* Checks whether a character is a lowercase */
-	bool IsLower(char c)
+	bool IsLower(char c) noexcept
 	{
 		return (c >= 'a' && c <= 'z');
 	}
 
 	/* Checks whether a character is an uppercase */
-	bool IsUpper(char c)
+	bool IsUpper(char c) noexcept
 	{
 		return (c >= 'A' && c <= 'Z');
 	}
 
 	/* Checks if a letter is an ASCII character */
-	bool IsChar(char c)
+	bool IsChar(char c) noexcept
 	{
 		return (IsUpper(c) || IsLower(c));
 	}
 
 	/* Converts a string to all uppercase */
-	std::string ToUpper(const std::string &toConvert)
+	std::string ToUpper(const std::string &toConvert) noexcept
 	{
 		std::string toReturn;
 
@@ -153,7 +153,7 @@ namespace StringUtils
 	}
 
 	/* Converts a string to all lowercase */
-	std::string ToLower(const std::string &toConvert)
+	std::string ToLower(const std::string &toConvert) noexcept
 	{
 		std::string toReturn;
 
