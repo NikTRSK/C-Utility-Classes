@@ -1,3 +1,8 @@
+/*
+	Author: Nikica Trajkovski
+	https://github.com/NikTRSK/Cpp-Utility-Classes
+*/
+
 #pragma once
 #include <string>
 #include <vector>
